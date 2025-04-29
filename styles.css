@@ -2,7 +2,8 @@
 
 /* IMPORTED FONTS*/
 
-/* IMPORT "INTER" FROM GOOGLE FONTS"
+/* IMPORT "INTER" FROM GOOGLE FONTS"*/
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Great+Vibes&family=Grey+Qo&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:wght@400;700&family=Monsieur+La+Doulaise&family=Pacifico&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Ruge+Boogie&family=Seymour+One&family=Whisper&display=swap");
 
 /* CSS RESET */
 /* http://meyerweb.com/eric/tools/css/reset/
@@ -65,27 +66,63 @@ table {
 }
 
 /* GLOBAL STYLES (MOBILE FIRST (SMALL) */
-.header {
-    color: #007BFF;
-    display: inline-flex;
-    flex-direction: row;
-    justify-content: right;
+body{
+    max-width: 800px;
 }
+h1, h2, h3{
+    font-family: "Inter";
+}
+h1{
+    font-size: 24px;
+}
+#results{
+    background-color: #007BFF;
+    color: #EAEAEA;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    }
+#results p{
+    text-align: left;
+    margin-left: 25px;
+}
+h2{
+    font-weight: bold;
+    font-size: 20px;
+}
+#results h2{
+    margin-left: 30px;
+    padding: 15px;
+}
+#results h3{
+    margin-left: 30px;
+}
+table {
+    background-color: #000000;
+    border: #000000;
+    color: #EAEAEA;
+    width: 200%;
+    text-align: center;
+    margin: 30px;
+    height: 300px;
+   
+}
+
 
 
 /* MIN-WIDTH OF THE PAGE SHOULD NOT GO BELOW 400PX */
 body{
     min-width: 400px;
+
 }
 /* ADD A DIV WITH THE CLASS OF CONTAINER TO EVERY CONTENT CONTAINER THIS IS ALLOW THE BASE ELEMENTS TO BE 100% WIDTH, BUT CONSTRAIN THE ACTUAL CONTENT TO 90% */
-.container {
+.container{
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
 }
 
 /* ADD TO "INNOVATION & INVESTMENT SECTION (Photo by Kevin Matos on Unsplash) */
- #innovation {
+#innovation{
     background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('images/vanguard-hero.jpg') no-repeat center center/cover;
     height: 80vh;
     display: grid;
@@ -96,14 +133,13 @@ body{
 }
 
 /* ADD FLOATING SVG LOGO BEFORE THE H1 */
- header {
+header {
     content: "";
     left:-.5rem;
     width: 3.75rem;
     height: 3.75rem;
     background: url('images/vanguard-logo.svg') no-repeat center/contain;
-
-}
+ }
 /* THIS ONE IS DONE FOR YOU */
 #bar-chart {
     display: grid;
@@ -123,7 +159,7 @@ body{
     background: var(--charcoal);
     border-radius: 10px;
     position: relative;
-    transition: ;
+    transition: 4s;
     height: 0;
 }
 /* THIS ONE IS DONE FOR YOU */
@@ -156,6 +192,7 @@ body{
 
     #results {
         grid-template-columns: 1fr 1fr;
+      
     }
     .results-container {
         flex-direction: row;
