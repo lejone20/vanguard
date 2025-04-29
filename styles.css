@@ -106,9 +106,18 @@ table {
     height: 300px;
    
 }
-
-
-
+#innovation p{
+    text-align: center;
+}
+#innovation{
+    color: #EAEAEA;
+}
+#innovation button{
+    background-color: #007BFF;
+    padding: 10px;
+    color: #EAEAEA;
+    font-weight: bold;
+}
 /* MIN-WIDTH OF THE PAGE SHOULD NOT GO BELOW 400PX */
 body{
     min-width: 400px;
