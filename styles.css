@@ -68,18 +68,27 @@ table {
 /* GLOBAL STYLES (MOBILE FIRST (SMALL) */
 body{
     max-width: 800px;
+    background-color: #000000;
+}
+header{
+    color: #007BFF;
+
 }
 h1, h2, h3{
     font-family: "Inter";
 }
 h1{
     font-size: 24px;
+    font-weight: bold;
+
+}
+header h2{
+    color: #000000;
 }
 #results{
     background-color: #007BFF;
     color: #EAEAEA;
     display: grid;
-    grid-template-rows: 1fr 1fr;
     }
 #results p{
     text-align: left;
@@ -139,6 +148,7 @@ body{
     text-align: center;
     padding: 1rem;
     overflow: hidden;
+    background-color: none;
 }
 
 /* ADD FLOATING SVG LOGO BEFORE THE H1 */
