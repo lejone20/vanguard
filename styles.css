@@ -68,7 +68,12 @@ table {
 /* GLOBAL STYLES (MOBILE FIRST (SMALL) */
 body{
     max-width: 800px;
-    background-color: #000000;
+    
+}
+nav {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 header{
     color: #007BFF;
@@ -83,7 +88,7 @@ h1{
 
 }
 header h2{
-    color: #000000;
+    
 }
 #results{
     background-color: #007BFF;
@@ -217,7 +222,7 @@ header {
         flex-direction: row;
         justify-content: space-between;
     }
-    .results-table {
+    #results-table {
         width: 50%;
     }
     .bar-chart {
