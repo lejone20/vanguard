@@ -66,12 +66,15 @@ table {
 }
 
 /* GLOBAL STYLES (MOBILE FIRST (SMALL) */
+header{
+    height:auto;
+    width:auto;
+}
 h1{
     font-family: "Inter";
     font-size: 24px;
     font-weight: bold;
-    margin-left: 50px;
-    background-color: #000000;
+    margin-left: 150px;
     color: #007BFF;
 }
 
@@ -90,7 +93,7 @@ h1{
   }
   nav li a {
     display:block;
-    font-family:sans-serif;
+    font-family: "Inter";
     font-size:1.5rem;
     padding:1rem;
     text-transform:uppercase;
@@ -101,6 +104,7 @@ h1{
   }
   nav a:hover, nav input:hover {
       background-color: #007BFF;
+      color: #EAEAEA;
   }
   nav label {
       cursor: pointer;
@@ -110,7 +114,7 @@ h1{
   }
   /* BUILDS THE MIDDLE LILNE OF THE HAMBURGER */
   label span {
-      background-color: #007BFF;
+      background-color: #EAEAEA;
       display: block;
       height: .25rem;
       position: relative;
@@ -173,49 +177,38 @@ h1{
     }
   }
 #strategic, #investment, #acceleration, #transformation, #advisory, #corp_innovation {
-    border-radius: 15px;
+    border-radius: 5px;
     background-color: #007BFF;
     color: #EAEAEA;
     padding: 20px;
     width: 350px;
     height: 100px;
-    display:block;
-    margin: auto;
-    justify-content: space-around;
+    display:grid;
+    justify-content: center;
+    margin: 15px auto;
+    
 }
+
 h2, h3{
     font-family: "Inter";
     text-align: center;
-    font-size: 18px;
     padding: 15px;
 }
-#results{
-    background-color: #007BFF;
-    color: #EAEAEA;
-    display: grid;
-    }
-#results p{
-    text-align: left;
-    margin-left: 25px;
-}
+
 h2{
     font-weight: bold;
     font-size: 20px;
 }
-#results h2{
-    margin-left: 30px;
-    padding: 15px;
-}
-#results h3{
-    margin-left: 30px;
-}
+
 table {
     background-color: #000000;
     border: #000000;
     color: #EAEAEA;
-    width: 200%;
+    width: 400px;
     text-align: center;
     height: 300px;
+   
+    
    
 }
 #innovation p{
@@ -230,7 +223,46 @@ table {
     color: #EAEAEA;
     font-weight: bold;
 }
+#innovation button:hover{
+    background-color: #FF4500;
+}
+#results-table h3{
+    font-family: "Inter";
+    font-weight: bold;
+    
 
+}
+#results, #results-table, #growth_chart{
+    background-color: #007BFF;
+    width: auto;
+}
+
+#contact{
+    background-color: #000000;
+    color: #EAEAEA;
+}
+#growth_chart{
+    border: solid 10px #007BFF;
+}
+form{
+    background-color: #000000;
+    color: #EAEAEA;
+    height: 300px;
+    padding: 10px;
+    }
+.submit{
+    background-color: #007BFF;
+    color: #EAEAEA;
+}
+#contact p{
+    padding: 15px;
+}
+footer{
+    background-color: #000000;
+    color: #EAEAEA;
+    text-align: center;
+    text-decoration-color: #007BFF;
+}
 /* MIN-WIDTH OF THE PAGE SHOULD NOT GO BELOW 400PX */
 body{
     min-width: 400px;
@@ -241,8 +273,8 @@ body{
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
-}
 
+}
 /* ADD TO "INNOVATION & INVESTMENT SECTION (Photo by Kevin Matos on Unsplash) */
 #innovation{
     background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('images/vanguard-hero.jpg') no-repeat center center/cover;
@@ -307,7 +339,7 @@ header {
 /* ADD ANIMATION ON stepUp for 1s ease-in-out forwards */
 .bar {
     animation: stepUp 1s ease-in-out forwards;
-    animation-duration: 1s;
+    animation-duration: 3s;
 }
 
 
