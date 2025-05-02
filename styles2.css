@@ -1,7 +1,7 @@
-
 /* CSS BY Lillian Jones */
 
 /* IMPORTED FONTS*/
+
 /* IMPORT "INTER" FROM GOOGLE FONTS"*/
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Great+Vibes&family=Grey+Qo&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:wght@400;700&family=Monsieur+La+Doulaise&family=Pacifico&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Ruge+Boogie&family=Seymour+One&family=Whisper&display=swap");
 
@@ -37,6 +37,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
     line-height: 1;
+
 }
 ol, ul {
     list-style: none;
@@ -67,8 +68,8 @@ table {
 /* GLOBAL STYLES (MOBILE FIRST (SMALL) */
 header{
     background-color: #000000;
+    color:#EAEAEA;
     border-bottom: 5px solid #007BFF;
-
 
 }
 h1{
@@ -76,15 +77,16 @@ h1{
     font-size: 24px;
     font-weight: bold;
     color: #007BFF;
-        
+    
 }
-nav ul {
+
+  nav ul {
     width: 100%;
     margin:0;
     padding:0;
     list-style:none;
     overflow:hidden;
-    text-align:right;
+    text-align:center;
     max-height: 0;
   }
   nav h2 {
@@ -158,14 +160,31 @@ nav ul {
   }
   /* LOCATION OF THE HAMBURGER */
   input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps) span:after {
-      top: 0
+      top: 0;
   }
-  h2, h3{
+ 
+#strategic, #investment, #acceleration, #transformation, #advisory, #corp_innovation {
+    border-radius: 5px;
+    background-color: #007BFF;
+    color: #EAEAEA;
+    padding: 20px;
+    width: 0 auto;
+    height: 0 auto;
+    display:grid;
+    margin: 15px auto;
+    
+}
+
+h2, h3{
     font-family: "Inter";
+    text-align: center;
     padding: 15px;
     font-weight: bold;
+    font-size: 20px;
 }
+
 h2{
+    font-weight: bold;
     font-size: 20px;
 }
 
@@ -175,7 +194,10 @@ table {
     color: #EAEAEA;
     width: 400px;
     text-align: center;
-    height: 300px;  
+    height: 300px;
+   
+    
+   
 }
 #innovation p{
     text-align: center;
@@ -197,23 +219,28 @@ table {
 #results-table h3{
     font-family: "Inter";
     font-weight: bold;
+    
+
 }
 #results, #results-table, #growth_chart{
     background-color: #007BFF;
-    
-}
-#growth_chart{
-    border: solid 10px #007BFF;
+    width: 0 auto;
 }
 #contact{
     background-color: #000000;
     color: #EAEAEA;
-    padding: 20px;
 }
-#contact p, #expertise p{
-    padding: 15px;
+#growth_chart{
+    border: solid 10px #007BFF;
 }
-#contact div{
+form{
+    background-color: #000000;
+    color: #EAEAEA;
+    height: 300px;
+    padding: 10px;
+    }
+
+#contact p{
     padding: 15px;
 }
 footer{
@@ -222,39 +249,20 @@ footer{
     text-align: center;
     text-decoration-color: #007BFF;
 }
-#strategic, #investment, #acceleration, #transformation, #advisory, #corp_innovation {
-    border-radius: 5px;
-    background-color: #007BFF;
-    color: #EAEAEA;
-    padding: 20px;
-    width: 0 auto;
-    height: 0 auto;
-    display:grid;
-    margin: 15px auto;
-    border: 3px solid #EAEAEA;
-    
-}
-#offer > div{
-    display: grid;
-
-}
-#results{
-    display: grid;
-}
 /* MIN-WIDTH OF THE PAGE SHOULD NOT GO BELOW 400PX */
 body{
     min-width: 400px;
 
 }
 /* ADD A DIV WITH THE CLASS OF CONTAINER TO EVERY CONTENT CONTAINER THIS IS ALLOW THE BASE ELEMENTS TO BE 100% WIDTH, BUT CONSTRAIN THE ACTUAL CONTENT TO 90% */
-.container {
+.container, #footer  .container{
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
-}
 
+}
 /* ADD TO "INNOVATION & INVESTMENT SECTION (Photo by Kevin Matos on Unsplash) */
- #innovation{
+#innovation{
     background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('images/vanguard-hero.jpg') no-repeat center center/cover;
     height: 80vh;
     display: grid;
@@ -262,18 +270,17 @@ body{
     text-align: center;
     padding: 1rem;
     overflow: hidden;
+    background-color: none;
 }
 
 /* ADD FLOATING SVG LOGO BEFORE THE H1 */
- {
+ h1{
     content: "";
-
     left:-.5rem;
     width: 3.75rem;
     height: 3.75rem;
     background: url('images/vanguard-logo.svg') no-repeat center/contain;
-
-}
+ }
 /* THIS ONE IS DONE FOR YOU */
 #bar-chart {
     display: grid;
@@ -293,7 +300,7 @@ body{
     background: var(--charcoal);
     border-radius: 10px;
     position: relative;
-    transition: 5s;
+    transition: 4s;
     height: 0;
 }
 /* THIS ONE IS DONE FOR YOU */
@@ -318,7 +325,7 @@ body{
 /* ADD ANIMATION ON stepUp for 1s ease-in-out forwards */
 .bar {
     animation: stepUp 1s ease-in-out forwards;
-    animation-duration: 15s;
+    animation-duration: 5s;
 }
 
 
@@ -338,12 +345,14 @@ body{
     label span, input {
       display:none;
     }
+
+  }
+
     #results {
-        display: grid;
         grid-template-columns: 1fr 1fr;
       
     }
-    #results-container {
+    .results-container {
         flex-direction: row;
         justify-content: space-between;
     }
@@ -353,21 +362,18 @@ body{
     .bar-chart {
         width: 50%;
     }
-    .offer {
+    #offer {
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
 
-  }
+
 
 /* MEDIA QUERIES (LARGE) */
-
-@media screen and (min-width: 1024px){
-
-    .offer {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+@media screen and (min-width: 1200){
+    main{
+        max-width: 1200px;
+        width: 90%;
     }
 
-  
 }
