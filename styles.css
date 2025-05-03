@@ -210,6 +210,12 @@ table {
     color: #EAEAEA;
     padding: 20px;
 }
+#submit{
+    background-color: #007BFF;
+    color: #000000;
+    width: 50px;
+}
+
 #contact p, #expertise p{
     padding: 15px;
 }
